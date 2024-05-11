@@ -1,0 +1,44 @@
+*{margin: 0;padding: 0;}
+body{
+	background-image: url(./images/background.jpg); 
+	background-size: cover;
+}
+#box{
+	width: 269px;height: 25rem;margin: auto;
+	position: fixed;left: 0;bottom: 0;right: 0;top: 0;
+	animation:zhuan 30s linear infinite;
+		transform-style:preserve-3d;
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+}
+img,video{
+	width: 269px;height: 400px;position: absolute;
+}
+@keyframes zhuan{
+	0%{
+				transform: rotateX(0deg) rotateY(0deg);
+			}
+			25%{
+				transform: rotateX(20deg) rotateY(180deg);
+			}
+			50%{
+				transform: rotateX(0deg) rotateY(360deg);
+			}
+			75%{
+				transform: rotateX(-20deg) rotateY(540deg);
+			}
+			100%{
+				transform: rotateX(0deg) rotateY(720deg);
+			}
+}
+img:nth-child(1){transform: rotateY(36deg) translateZ(100px);}
+img:nth-child(2){transform: rotateY(72deg) translateZ(600px);}
+img:nth-child(3){transform: rotateY(108deg) translateZ(600px);}
+img:nth-child(4){transform: rotateY(144deg) translateZ(600px);}
+img:nth-child(5){transform: rotateY(180deg) translateZ(600px);}
+img:nth-child(6){transform: rotateY(216deg) translateZ(600px);}
+img:nth-child(7){transform: rotateY(252deg) translateZ(600px);}
+img:nth-child(8){transform: rotateY(288deg) translateZ(600px);}
+img:nth-child(9){transform: rotateY(324deg) translateZ(600px);}
+img:nth-child(10){transform: rotateY(360deg) translateZ(600px);}
+img:nth-child(11){transform: rotateY(36deg) translateZ(600px);}

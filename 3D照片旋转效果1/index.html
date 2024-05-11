@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>这里的文字可修改</title>
+		<link rel="stylesheet" type="text/css" href="./index.css"/>
+	</head>
+	<body>
+		<div id="box">
+			<img src="./images/center.jpg">
+			<img src="./images/1.jpg" >
+			<img src="./images/2.jpg" >
+			<img src="./images/3.jpg" >
+			<img src="./images/4.jpg" >
+			<img src="./images/5.jpg" >
+			<img src="./images/6.jpg" >
+			<img src="./images/7.jpg" >
+			<img src="./images/8.jpg" >
+			<img src="./images/9.jpg" >
+			<img src="./images/10.jpg" >
+		</div>
+	</body>
+<audio id="vd" autoplay="autoplay" controls="controls"   loop="loop" preload="auto"
+
+            src="music/music.mp3">
+
+        你的浏览器版本太低，不支持audio标签
+
+</audio>
+
+<script type="text/javascript">
+    window.onload = function(){
+             setInterval("toggleSound()",100);
+        }
+
+    function toggleSound() {
+                var music = document.getElementById("vd");//获取ID  
+                    
+                if (music.paused) { //判读是否播放  
+                    music.paused=false;
+                    music.play(); //没有就播放 
+                }    
+        }
+</script>
+</html>
